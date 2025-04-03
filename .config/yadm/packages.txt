@@ -88,6 +88,8 @@ waybar
 ## Term
 ghostty
 ## WM
+uwsm
+greetd-regreet
 hypridle
 hyprland
 hyprland-plugin-hyprscroller-git
