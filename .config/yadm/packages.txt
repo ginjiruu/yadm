@@ -1,0 +1,229 @@
+# C libraries
+
+smpeg
+sdl_ttf
+sdl_sound
+sdl_net
+sdl_mixer
+sdl_image
+sdl_gfx
+sdl3
+
+sdl2_net
+sdl2_ttf
+sdl2_mixer
+sdl2_image
+sdl2_gfx
+sdl2_compat
+
+raylib
+
+clay
+
+nuklear
+makeheaders
+enet
+zpl
+
+seer
+bear
+
+llvm
+lldb gdb
+
+# Audio
+mixxx
+helvum
+
+# Config
+yadm
+
+# Utils
+man-db
+man-pages
+pacman-contrib
+mlocate
+nmap
+nushell
+go-yq
+yt-dlp
+neofetch
+lazygit
+btop
+libarchive
+downgrade
+inotify-tools
+iperf3
+shellcheck
+
+# Apps
+floorp
+
+# Hyprland Desktop utilities
+
+## Screen Recorder
+wf-recorder
+wf-recorder-gui
+slurp
+hyprshot
+
+## Window Decorations
+libdecor
+
+## Notifications
+mako
+
+## Game window tricks
+gamescope
+
+## App launcher
+walker
+
+## 
+nwg-look
+nwg-display
+## Head bar
+waybar
+
+## Term
+ghostty
+## WM
+hypridle
+hyprland
+hyprland-plugin-hyprscroller-git
+hyprland-protocols
+hyprlock
+hyprpaper
+hyprpicker
+hyprpolkitagent
+hyprshot
+hyprsysteminfo
+xdg-desktop-portal-hyprland
+hyprpicker
+hyprpolkitagent
+## Wallpaper
+hyprpaper
+
+## fingerprint
+fprint
+
+# gst-plugins
+gstreamer
+
+gst-plugin-pipewire
+gst-plugin-va
+gstreamer-vaapi
+
+# Video
+mpv
+vlc
+
+# Media/Battery/Display things
+tuned-ppd
+playerctl
+brightnessctl
+
+# Game Dev
+trenchbroom-bin
+
+# Golang
+golang
+git-chglog-bin
+go-imports-bin
+go-task
+migrate
+kaniko
+sqlc
+
+# Devops
+minikube
+ansible
+podman
+flux
+operator-sdk
+velero
+krew
+openlens-bin
+kubebuilder-bin
+stern
+glab
+docker
+kubectl
+clusterctl-bin
+tailscale
+helm
+helm-ls
+
+kube-linter
+kubectl-cnpg
+kubectl-df-pv
+kubent-bin
+
+argo
+knative
+func
+ko
+kcl-lang
+kcl-lang-language-server-bin
+
+# Video Editing
+bigsh0t kimageformats mediainfo opencv noise-suppression-for-voice opentimelineio qt6-imageformats
+kdenlive
+# Install manually davinci
+
+
+# Web development
+tailwindcss-bin
+esbuild
+nodejs
+
+# Starsector/Java
+intellij-idea-community-edition 
+kotlin
+
+
+# Games
+wine
+steam-native-runtime
+lutris
+proton
+
+# Neovim
+ripgrep 
+wl-clipboard
+starship
+neovim
+tmux
+fzf
+
+# Rust
+# kanidm
+rustup
+
+# Web
+chromium
+floorp
+
+# Images
+krita 
+gimp
+
+# Management
+cockpit
+firewalld
+nft
+qemu
+ssh-agent
+ssh
+linux-firmware
+
+# Internet applications
+deluge
+webcord
+zoom
+vesktop-bin
+
+# Shells
+fish
+bash-completion
+

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Setup manual package dir
+mkdir ~/Packages/
+
+echo "installing build tools"
+pacman -S git make unzip gcc
+
+echo "cloning paru"
+git clone https://aur.archlinux.org/paru-bin.git ~/Packages/paru-bin
+cd ~/Packages/paru-bin || exit
+makepkg -si
+
+# Install software
+paru -S <~/.config/yadm/packages.txt
