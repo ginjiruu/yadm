@@ -120,7 +120,7 @@ gstreamer-vaapi
 mpv
 vlc
 
-# Media/Battery/Display things
+# Media,Battery,Display things
 tuned-ppd
 playerctl
 brightnessctl
@@ -179,7 +179,7 @@ tailwindcss-bin
 esbuild
 nodejs
 
-# Starsector/Java
+# Starsector,Java
 intellij-idea-community-edition 
 kotlin
 
