@@ -142,10 +142,10 @@ krita
 gimp
 cockpit
 firewalld
-nft
+nftables
 qemu
-ssh-agent
-ssh
+openssh
+libssh
 linux-firmware
 deluge
 webcord
