@@ -1,5 +1,10 @@
 #!/bin/bash
 
+cd "$HOME" || exit
+
+echo "Init submodules"
+yadm submodule update --recursive --init
+
 # Setup manual package dir
 mkdir ~/Packages/
 

@@ -1,3 +1,4 @@
+cmake
 smpeg
 sdl_ttf
 sdl_sound
@@ -136,7 +137,7 @@ starship
 neovim
 tmux
 fzf
-rustup
+rust
 chromium
 krita
 gimp
