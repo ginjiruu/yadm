@@ -64,13 +64,13 @@ hyprland-plugin-hyprscroller-git
 hyprland-protocols
 hyprlock
 hyprpaper
+gnome-backgrounds-macos
 hyprpicker
 hyprpolkitagent
 hyprsysteminfo
 xdg-desktop-portal-hyprland
 hyprpicker
 hyprpolkitagent
-hyprpaper
 fprint
 gstreamer
 gst-plugin-pipewire
