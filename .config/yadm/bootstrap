@@ -12,4 +12,4 @@ cd ~/Packages/paru-bin || exit
 makepkg -si
 
 # Install software
-paru -S --needed - <~/.config/yadm/packages.txt
+paru -S --needed --noconfirm - <~/.config/yadm/packages.txt

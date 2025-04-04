@@ -93,7 +93,7 @@ ansible
 podman
 fluxcd
 operator-sdk
-velero
+velero-bin
 krew
 openlens-bin
 kubebuilder-bin
@@ -104,7 +104,7 @@ kubectl
 clusterctl-bin
 tailscale
 helm
-helm-ls
+helm-ls-bin
 kube-linter
 kubectl-cnpg
 kubectl-df-pv
@@ -129,7 +129,7 @@ kotlin
 wine
 steam-native-runtime
 lutris
-proton
+proton-ge-custom-bin
 ripgrep
 wl-clipboard
 starship
@@ -148,7 +148,7 @@ openssh
 libssh
 linux-firmware
 deluge
-webcord
+webcord-bin
 zoom
 vesktop-bin
 fish

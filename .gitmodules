@@ -1,0 +1,6 @@
+[submodule ".config/nvim"]
+	path = .config/nvim
+	url = /home/ginjiruu/.config/nvim/
+[submodule ".config/tmux"]
+	path = .config/tmux
+	url = /home/ginjiruu/.config/tmux/
