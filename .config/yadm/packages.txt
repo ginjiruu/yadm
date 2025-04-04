@@ -43,7 +43,7 @@ downgrade
 inotify-tools
 iperf3
 shellcheck
-floorp
+floorp-bin
 wf-recorder
 wf-recorder-gui
 slurp
@@ -51,9 +51,9 @@ hyprshot
 libdecor
 mako
 gamescope
-walker
+walker-bin
 nwg-look
-nwg-display
+nwg-displays
 waybar
 ghostty
 uwsm
@@ -65,7 +65,6 @@ hyprlock
 hyprpaper
 hyprpicker
 hyprpolkitagent
-hyprshot
 hyprsysteminfo
 xdg-desktop-portal-hyprland
 hyprpicker
@@ -111,8 +110,7 @@ kubectl-cnpg
 kubectl-df-pv
 kubent-bin
 argocd
-knative
-func
+knative-client
 ko
 kcl-lang
 kcl-lang-language-server-bin
@@ -140,7 +138,6 @@ tmux
 fzf
 rustup
 chromium
-floorp
 krita
 gimp
 cockpit
