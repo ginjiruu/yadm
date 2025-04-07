@@ -18,6 +18,8 @@ makepkg -si
 
 # Install software
 paru -S --needed - <~/.config/yadm/packages.txt
+# Install drivers
+paru -S --needed - <~/.config/yadm/drivers.txt
 
 # Setup greeter
 sudo cp /usr/share/doc/greetd-regreet/regreet.sample.toml /etc/greetd/regreet.toml
