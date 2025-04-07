@@ -115,8 +115,6 @@ kubent-bin
 argocd
 knative-client
 ko
-kcl-lang
-kcl-lang-language-server-bin
 kimageformats
 mediainfo
 opencv

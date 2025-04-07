@@ -17,8 +17,7 @@ cd ~/Packages/paru-bin || exit
 makepkg -si
 
 # Install software
-packages=$(cut -d '#' -f 1 ~/.config/yadm/packages.txt)
-paru -S --needed < $packages
+paru -S --needed - <~/.config/yadm/packages.txt
 
 # Setup greeter
 sudo cp /usr/share/doc/greetd-regreet/regreet.sample.toml /etc/greetd/regreet.toml
