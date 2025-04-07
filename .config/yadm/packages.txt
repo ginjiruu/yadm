@@ -65,6 +65,7 @@ hyprland-protocols
 hyprlock
 hyprpaper
 gnome-backgrounds-macos
+hypaper
 hyprpicker
 hyprpolkitagent
 hyprsysteminfo
@@ -125,6 +126,7 @@ kdenlive
 tailwindcss-bin
 esbuild
 nodejs
+npm
 intellij-idea-community-edition
 kotlin
 wine

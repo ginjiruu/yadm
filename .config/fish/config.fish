@@ -1,6 +1,7 @@
 alias vim nvim
 alias vi nvim
 set -x EDITOR nvim
+# eval (ssh-agent -c)
 
 if status is-interactive
     abbr --add kc kubectl
