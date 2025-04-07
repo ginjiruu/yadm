@@ -26,3 +26,4 @@ sudo cp ~/.config/yadm/greetd/* /etc/greetd/
 # Setup systemd services
 systemctl enable --user hypaper
 sudo systemctl enable greetd
+sudo systemctl enable sshd 
