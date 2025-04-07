@@ -23,3 +23,7 @@ paru -S --needed < $packages
 # Setup greeter
 sudo cp /usr/share/doc/greetd-regreet/regreet.sample.toml /etc/greetd/regreet.toml
 sudo cp ~/.config/yadm/greetd/* /etc/greetd/
+
+# Setup systemd services
+systemctl enable --user hypaper
+sudo systemctl enable greetd

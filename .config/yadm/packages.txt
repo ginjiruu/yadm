@@ -81,6 +81,8 @@ vlc
 tuned-ppd
 playerctl
 brightnessctl
+greetd
+greetd-regreet
 trenchbroom-bin
 go
 git-chglog-bin
