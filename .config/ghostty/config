@@ -1,0 +1,10 @@
+
+font-family = Adwaita
+
+theme = dark:Adwaita Dark,light:Adwaita 
+
+shell-integration = fish
+
+app-notifications = no-clipboard-copy
+gtk-tabs-location = hidden
+adw-toolbar-style = flat
