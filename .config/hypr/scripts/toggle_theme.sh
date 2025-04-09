@@ -6,7 +6,7 @@ THEME_FILE="$HOME/.config/hypr/theme"
 if [[ -f "$THEME_FILE" && "$(cat $THEME_FILE)" == "dark" ]]; then
 	echo "light" >"$THEME_FILE"
 	# System theme
-	gsettings set org.gnome.desktop.interface color-scheme default
+	gsettings set org.gnome.desktop.interface color-scheme prefer-light
 	gsettings set org.gnome.desktop.interface gtk-theme Adwaita
 
 	# swww img /usr/share/backgrounds/gnome-macos/catalina-l.jpg
