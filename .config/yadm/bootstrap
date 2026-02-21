@@ -2,30 +2,22 @@
 
 cd "$HOME" || exit
 
-echo "Init submodules"
-yadm submodule update --recursive --init
-
 # Setup manual package dir
-mkdir ~/Packages/
+mkdir ~/Projects/Packages -p
 
 echo "installing build tools"
-pacman -S git make unzip gcc
+pacman -S git make unzip gcc base-devel
 
 echo "cloning paru"
-git clone https://aur.archlinux.org/paru-bin.git ~/Packages/paru-bin
-cd ~/Packages/paru-bin || exit
+git clone https://aur.archlinux.org/paru.git ~/Packages/paru
+cd ~/Projects/Packages/paru || exit
 makepkg -si
 
-# Install software
-paru -S --needed - <~/.config/yadm/packages.txt
-# Install drivers
-paru -S --needed - <~/.config/yadm/drivers.txt
-
-# Setup greeter
-sudo cp /usr/share/doc/greetd-regreet/regreet.sample.toml /etc/greetd/regreet.toml
-sudo cp ~/.config/yadm/greetd/* /etc/greetd/
+# # Install software
+# paru -S --needed - <~/.config/yadm/packages.txt
+# # Install drivers
+# paru -S --needed - <~/.config/yadm/drivers.txt
 
 # Setup systemd services
 systemctl enable --user hypaper
-sudo systemctl enable greetd
-sudo systemctl enable sshd 
+sudo systemctl enable sshd

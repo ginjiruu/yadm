@@ -2,10 +2,12 @@
 font-family = "Adwaita"
 font-size = "14"
 
-theme = dark:Adwaita Dark,light:Adwaita 
+# theme = dark:Adwaita Dark,light:Adwaita
+theme = 12-bit Rainbow
 
 shell-integration = fish
 
 app-notifications = no-clipboard-copy
-gtk-tabs-location = hidden
-adw-toolbar-style = flat
+# gtk-tabs-location = hidden
+
+quit-after-last-window-closed = false

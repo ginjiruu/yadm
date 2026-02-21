@@ -2,6 +2,7 @@ alias vim nvim
 alias vi nvim
 alias icat chafa
 alias rook-ceph "kubectl rook-ceph"
+alias task go-task
 set -x EDITOR helix
 set -x KANIDM_NAME ginjiruu
 set -x KANIDM_URL https://auth.animeteamspeak.moe

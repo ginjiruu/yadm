@@ -2,7 +2,7 @@
 
 handle() {
   case $1 in
-    windowtitlev2*Extension*)
+    windowtitlev2*Extension*Bitwarden*)
       # Extract the address (the part between '>>' and ',')
       # $1 looks like: windowtitlev2>>555eb728e680,Extension: (Bitwarden...
       local addr_with_prefix="${1#*>>}"        # Remove everything up to '>>'
