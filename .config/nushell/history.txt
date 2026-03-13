@@ -1,0 +1,290 @@
+starship --help
+starship completions 
+starship completions  --help
+starship completions nushell
+$nu.data-dir
+cd $nu.data-dir
+mkdir ($nu.data-dir | path join "vendor/autoload")<\n>starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
+clear
+kubectl get nodes
+kubectl get persistent-volumes
+kubectl get persistentvolumes
+kubectl get persistentvolumes -o json | as json
+kubectl get persistentvolumes -o json 
+kubectl get persistentvolumes -o json | to json
+kubectl get persistentvolumes -o json | from json
+kubectl get persistentvolumes -o json | from json | <\n>.status.Released
+kubectl get persistentvolumes -o json | from json | write  
+kubectl get persistentvolumes -o json | from json | get 0
+kubectl get persistentvolumes -o json | from json | get kind
+kubectl get persistentvolumes -o json | from json | get items
+kubectl get persistentvolumes -o json | from json | get items | get 0
+kubectl get persistentvolumes -o json | from json | get items | where phase == "Released"
+kubectl get persistentvolumes -o json | from json | get items | where status.phase == "Released"
+kubectl get persistentvolumes -o json | from json | get items | where status.phase == "Released" | get 0
+let KUBECONFIG  = ~/.kube/production-cluster.yaml
+let KUBECONFIG=~/.kube/production-cluster.yaml
+$env.KUBECONIFG =  KUBECONFIG=~/.kube/production-cluster.yaml
+$env.KUBECONIFG = ~/.kube/production-cluster.yaml
+$env.KUBECONIFG = '~/.kube/production-cluster.yaml'
+kubectl get nodes
+let KUBECONIFG = '~/.kube/production-cluster.yaml'
+kubectl get nodes
+clear
+kubectl get persistentvolumes -o json | from json | get items | where status.phase == "Released" | get 0
+kubectl get persistentvolumes -o json | from json | get items | where status.phase == "Released" 
+kubectl get persistentvolumes -o json | from json | get items | where status.phase == "Released" | get 0
+kubectl get persistentvolumes -o json | from json | get items | where status.phase == "Released" | get spec.capacity.storage |  into filesize | math sum
+let pvs = (kubectl get pv -o json | from json | get items | where status.phase == "Released")<\n>$pvs | append {<\n>    metadata: { name: "TOTAL" }, <\n>    spec: { capacity: { storage: ($pvs.spec.capacity.storage | into filesize | math sum) } }<\n>}
+kubectl get persistentvolumes -o json | from json | get items | where status.phase == "Released" | get spec.capacity.storage |  into filesize | math sum
+kubectl completions
+kubectl completion
+kubectl completion -h
+kubectl completion nushell
+kubectl completion nu
+clear
+kubectl get persistentvolumes -o json | from json | get items | where status.phase == "Released" | get metadata.name
+kubectl get persistentvolumes -o json | from json | get items | where status.phase == "Released" | get metadata.name | save released.table
+helix released.table
+clear
+let kube = (open ceph-pv.txt | lines)
+let kube = (open kb-pv.txt| lines)
+let ceph = (open ceph-pv.txt | lines)
+kubectl get nodes -o json <\n>  | from json <\n>  | get items 
+file totals.json
+file totals.json | from json | get items
+file totals.json | from json | get Name
+open totals.json
+open totals.json | math sum GB_used
+open totals.json | select GB_used| math sum 
+open totals.json | select GB_Used
+open totals.json | select GB_Used | into filesize | math sum
+open totals.json | select GB_Used | into filesize
+open totals.json | select GB_Used | into 
+open totals.json | select GB_Used 
+open totals.json | select GB_Used  | into int | into filesize
+open totals.json | select GB_Used  | into int 
+open totals.json | select GB_Used  | describe 
+open totals.json | describe
+open totals.json | select GB_Used  | into string
+open totals.json | select GB_Used  | to nuon
+open totals.json | select GB_Used 
+open totals.json | get GB_Used | math sum 
+open totals.json | get GB_Used 
+open totals.json | sort-by GB_Used 
+open totals.json | sort-by GB_Used  | uniq-by Name
+open totals.json | sort-by GB_Used 
+open totals.json | sort-by GB_Used  | uniq-by Name
+open totals.json | sort-by GB_Used  | uniq-by Name | save totals_uniqe.json
+./get-abandoned-vols.sh moodle_group_2
+ls
+kubectl get pv -o json
+kubectl get pv -o json | into json
+kubectl get pv -o json | fro json
+kubectl get pv -o json | from json
+kubectl get pv -o json | from json | <\n>
+kubectl get pv -o json | from json | get 0<\n>
+kubectl get pv -o json | from json | describe<\n>
+kubectl get pv -o json | from json | get items<\n>
+kubectl get pv -o json | from json | get items | select metadata.anem<\n>
+kubectl get pv -o json | from json | get items | select metadata.name<\n>
+kubectl --kubeconfig=~/.kube/production-cluster.yaml get pv -o json | from json | get items | select metadata.name<\n>
+kubectl --kubeconfig ~/.kube/production-cluster.yaml get pv -o json | from json | get items | select metadata.name<\n>
+kubectl --kubeconfig ~/.kube/production-cluster.yaml get pv -o json | from json | get items | select metadata.name | sort |save kb-pv.txt
+kubectl --kubeconfig ~/.kube/production-cluster.yaml get pv -o json | from json | get items | select metadata.name | sort | save kb-pv.txt
+kubectl --kubeconfig ~/.kube/production-cluster.yaml get pv -o json | from json | get items | select metadata.name | save kb-pv.txt
+kubectl --kubeconfig ~/.kube/production-cluster.yaml get pv -o json | from json | get items | select metadata.name | save kb-pv.txt --force 
+kubectl --kubeconfig ~/.kube/production-cluster.yaml get pv -o json | from json | get items | select metadata.name 
+kubectl --kubeconfig ~/.kube/production-cluster.yaml get pv -o json | from json | get items | select metadata.name  | sort
+kubectl --kubeconfig ~/.kube/production-cluster.yaml get pv -o json | from json | get items | select metadata.name  | sort | save kb-sorted.txt
+kubectl --kubeconfig ~/.kube/production-cluster.yaml get pv -o json | from json | get items. metadata.name  | sort | save kb-sorted.txt
+kubectl --kubeconfig ~/.kube/production-cluster.yaml get pv -o json | from json | get items.metadata.name  | sort | save kb-sorted.txt
+kubectl --kubeconfig ~/.kube/production-cluster.yaml get pv -o json | from json | get items.metadata.name  | sort 
+kubectl --kubeconfig ~/.kube/production-cluster.yaml get pv -o json | from json | get items.metadata.name  | sort | save kb-sorted.txt --force 
+open moodle-group-2.json 
+kubectl --kubeconfig ~/.kube/production-cluster.yaml get pv -o json | from json | get items.spec.csi.volumeAttributes.fsName   | sort
+kubectl --kubeconfig ~/.kube/production-cluster.yaml get pv -o json | from json | get items.spec   | sort
+kubectl --kubeconfig ~/.kube/production-cluster.yaml get pv -o json | from json | get items.spec | sort
+kubectl --kubeconfig ~/.kube/production-cluster.yaml get pv -o json | from json | get items.spec.csi.volumeAttributes | sort
+kubectl --kubeconfig ~/.kube/production-cluster.yaml get pv -o json | from json | get items.spec.csi.volumeAttributes | describe
+kubectl --kubeconfig ~/.kube/production-cluster.yaml get pv -o json | from json | descibe
+kubectl --kubeconfig ~/.kube/production-cluster.yaml get pv -o json | from json | describe
+kubectl --kubeconfig ~/.kube/production-cluster.yaml get pv -o json | from json | get items.spec describe
+kubectl --kubeconfig ~/.kube/production-cluster.yaml get pv -o json | from json | get items.spec | describe
+kubectl --kubeconfig ~/.kube/production-cluster.yaml get pv -o json | from json | get items | where spec.csi.volumeAttributes?.fsName == moodle_group_2 | insert output { |it| $"($it.spec.csi.volumeAttributes.subvolumeName) ($it.spec.claimRef.name)" }<\n>| get output <\n>| save -f kb-pv.txt
+kubectl --kubeconfig ~/.kube/production-cluster.yaml get pv -o json | from json | get items.spec.csi.volumeAttributes
+kubectl --kubeconfig ~/.kube/production-cluster.yaml get pv -o json | from json | get items.spec.csi.volumeAttributes.fsName   | compact
+kubectl --kubeconfig ~/.kube/production-cluster.yaml get pv -o json | from json | get items.spec.csi.volumeAttributes.fsName? 
+kubectl --kubeconfig ~/.kube/production-cluster.yaml get pv -o json | from json | get items.spec.csi.volumeAttributes.fsName? == moodle_group_2 | each { $"($in.spec.csi.volumeAttributes.subvolumeName) ($in.spec.claimRef.name)" }
+kubectl --kubeconfig ~/.kube/production-cluster.yaml get pv -o json | from json | get items.spec.csi.volumeAttributes.fsName?| compact 
+kubectl --kubeconfig ~/.kube/production-cluster.yaml get pv -o json | from json | where items.spec.csi.volumeAttributes.fsName? == moodle_group_2 
+kubectl --kubeconfig ~/.kube/production-cluster.yaml get pv -o json | from json | get items | where spec.csi.volumeAttributes.fsName? == moodle_group_2 
+kubectl --kubeconfig ~/.kube/production-cluster.yaml get pv -o json | from json | get items | where spec.csi.volumeAttributes.fsName? == moodle_group_2  | get metedata.name
+kubectl --kubeconfig ~/.kube/production-cluster.yaml get pv -o json | from json | get items | where spec.csi.volumeAttributes.fsName? == moodle_group_2  | get metadata.name
+kubectl --kubeconfig ~/.kube/production-cluster.yaml get pv -o json | from json | get items | where spec.csi.volumeAttributes.fsName? == moodle_group_2  
+kubectl --kubeconfig ~/.kube/production-cluster.yaml get pv -o json | from json | get items | where spec.csi.volumeAttributes.fsName? == moodle_group_2  | describe spec
+kubectl --kubeconfig ~/.kube/production-cluster.yaml get pv -o json | from json | get items | where spec.csi.volumeAttributes.fsName? == moodle_group_2  | describe 
+kubectl --kubeconfig ~/.kube/production-cluster.yaml get pv -o json | from json | get items | where spec.csi.volumeAttributes.fsName? == moodle_group_2  | get spec.csi.volumeAttributes.subvolumeName
+kubectl --kubeconfig ~/.kube/production-cluster.yaml get pv -o json | from json | get items | where spec.csi.volumeAttributes.fsName? == moodle_group_2  | get spec.csi.volumeAttributes.subvolumeName | sort | save kb-sorted.txt
+kubectl --kubeconfig ~/.kube/production-cluster.yaml get pv -o json | from json | get items | where spec.csi.volumeAttributes.fsName? == moodle_group_2  | get spec.csi.volumeAttributes.subvolumeName | sort | save kb-sorted.txt --force
+let ceph = (open moodle-group-2.json | get name)
+let kube = (kb-sorted.txt | lines)
+let kube = (open kb-sorted.txt | lines)
+kube
+echo kube
+echo $kube
+echo $ceph
+echo $kube
+echo $ceph
+$ceph | set difference $kube
+$ceph | where $it not-in  $kube
+$ceph | where $it not-in  $kube | save missing.txt
+$ceph | where $it not-in  $kube | save missing.txt -f 
+rsync missing.txt pre-vz-1:
+open missing.txt
+open missing.txt | lines | each { |vol| <\n>    kubectl --kubeconfig ~/.kube/production-cluster.yaml get pv $vol -o jsonpath='{.spec.capacity.storage}' | into filesize <\n>} | math sum
+set 
+let KUBECONIFG = '~/.kube/production-cluster.yaml'
+kubectl get nodes
+clear
+$env.KUBECONIFG = '~/.kube/production-cluster.yaml'
+kubectl get nodes
+$env.KUBECONFIG = '~/.kube/production-cluster.yaml'
+kubectl get nodes
+$env.KUBECONFIG = ~/.kube/production-cluster.yaml
+$env.KUBECONFIG = "~/.kube/production-cluster.yaml"
+kubectl get nodes
+let missing_vols = (open missing.txt | lines)<\n><\n>kubectl --kubeconfig ~/.kube/production-cluster.yaml get pv -o json<\n>| from json <\n>| get items <\n>| filter {|pv| $pv.spec?.csi?.volumeAttributes?.sobvolumeName in $missing_vols} <\n>| get spec.capacity.storage <\n>| into filesize <\n>| math sum
+let missing_vols = (open missing.txt | lines)
+clear
+kubectl --kubeconfig ~/.kube/production-cluster.yaml get pv -o json | from json | get items | where   spec.csi.volumeAttributes.subvolumeName in $missing_vols 
+kubectl --kubeconfig ~/.kube/production-cluster.yaml get pv -o json | from json | get items | where spec.csi.volumeAttributes.fsName? == moodle_group_2 | where   spec.csi.volumeAttributes.subvolumeName in $missing_vols 
+$missing_vols
+kubectl --kubeconfig ~/.kube/production-cluster.yaml get pv -o json | save pvs.json
+open pvs.json | get items | where spec.csi.volumeAttributes.fsName? == moodle_group_2 | where   spec.csi.volumeAttributes.subvolumeName in $missing_vols 
+open pvs.json | get items | where spec.csi.volumeAttributes.fsName? == moodle_group_2 
+help commands 
+help commands  | where category == filters
+open pvs.json | get items | where spec.csi.volumeAttributes.fsName? == moodle_group_2 | where spec.csi.volumeAttributes.subvolumeName == csi-vol-f630c03a-596f-11ee-b028-32da361c1b17
+open pvs.json | get items | where spec.csi.volumeAttributes.fsName? == moodle_group_2 | get spec.csi.volumeAttributes.subvolumeName
+open pvs.json | get items | where spec.csi.volumeAttributes.fsName? == moodle_group_2 | get spec.csi.volumeAttributes.subvolumeName | select csi-vol-f630c03a-596f-11ee-b028-32da361c1b17<\n>alias 
+open pvs.json | get items | where spec.csi.volumeAttributes.fsName? == moodle_group_2 | get spec.csi.volumeAttributes.subvolumeName | select csi-vol-f630c03a-596f-11ee-b028-32da361c1b17 
+open pvs.json | get items | where spec.csi.volumeAttributes.fsName? == moodle_group_2 | where spec.csi.volumeAttributes.subvolumeName == csi-vol-af7d6e5b-861b-11ed-8e46-86d2c3acb1b4
+clear
+touch missing.nu
+nuls
+paru nushell lang
+paru nushell server
+nu --lsp
+clear
+celar
+clear
+open pvs.json | get items | where spec.csi.volumeAttributes.fsName? == moodle_group_3
+rsync pre-vz-1:moodle-group-3.json ./
+open moodle-group-3.json
+open moodle-group-3.json | where $it not-in (open pvs.json | get items | where spec.csi.volumeAttributes.fsName? == moodle_group_3)
+clear
+open pvs.json | get items | where spec.csi.volumeAttributes.fsName? == moodle_group_3
+open pvs.json | get items | where spec.csi.volumeAttributes.fsName? == moodle_group_3  | get spec.csi.volumeAttributes.subvolumeName
+open moodle-group-3.json | where $it not-in (open pvs.json | get items | where spec.csi.volumeAttributes.fsName? == moodle_group_3  | get spec.csi.volumeAttributes.subvolumeName)
+clear
+open pvs.json | get items | where spec.csi.volumeAttributes.fsName? == moodle_group_3  | get spec.csi.volumeAttributes.subvolumeName
+open pvs.json | get items | where spec.csi.volumeAttributes.fsName? == moodle_group_3  | get spec.csi.volumeAttributes.subvolumeName | save kube-moodle-3-pv.json
+open pvs.json | get items | where spec.csi.volumeAttributes.fsName? == moodle_group_3  | get spec.csi.volumeAttributes.subvolumeName | sort | save kube-moodle-3-pv.json --force 
+let kube = (open kube-moodle-3-pv.json | lines)
+let kube = (open kube-moodle-3-pv.json)
+$kube
+let ceph = (open moodle-group-3.json | get name)
+$ceph
+$ceph | where $it not-in  $kube 
+$ceph | where $it not-in  $kube | save missing-3.txt -f 
+rsync missing-3.txt pre-vz-1:missing.txt
+rsync pre-vz-1:mising.json ./
+rsync pre-vz-1:missing.json ./
+open missing.json
+open missing.json | sort
+open missing.json | sort-by GB_Used
+open pvs.json | get items | where spec.csi.volumeAttributes.fsName? == moodle_group_1  | get spec.csi.volumeAttributes.subvolumeName | sort | save kube-moodle-1-pv.json
+clear
+kubectl --kubeconfig ~/.kube/k3s-management-cluster.yaml get pvs -o json | from json | get items | where spec.csi.volumeAttributes.fsName? == moodle_group_1  | get spec.csi.volumeAttributes.subvolumeName | sort | save mgmt-kube-moodle-1-pv.json
+kubectl --kubeconfig ~/.kube/k3s-management-cluster.yaml get pvs -o json | from json | get items 
+kubectl --kubeconfig ~/.kube/k3s-management-cluster.yaml get pv-o json | from json | get items 
+kubectl --kubeconfig ~/.kube/k3s-management-cluster.yaml get pv -o json | from json | get items 
+kubectl --kubeconfig ~/.kube/k3s-management-cluster.yaml get pv -o json | from json | get items | where spec.csi.volumeAttributes.fsName? == moodle_group_1  | get spec.csi.volumeAttributes.subvolumeName | sort | save mgmt-kube-moodle-1-pv.json
+open mgmt-kube-moodle-1-pv.json | append (open kube-moodle-1-pv.json)
+open mgmt-kube-moodle-1-pv.json | append (open kube-moodle-1-pv.json) | save merged.json
+rsync pre-vz-1:moodle-group-1.json ./
+let ceph = (open moodle-group-1.json | get name)
+let kube = (open merged.json)
+$ceph | where $it not-in  $kube | save missing-1.txt -f 
+rsync missing-1.txt pre-vz-1:missing.txt
+rsync pre-vz-1:missing.json ./
+open missing.json | sort-by GB_Used
+celar
+clear
+lear
+clear
+open moodle-group-2.json
+open pvs.json | get items | where spec.csi.volumeAttributes.fsName? == moodle_group_2  | get 
+open pvs.json | get items | where spec.csi.volumeAttributes.fsName? == moodle_group_2  
+open pvs.json | get items | where spec.csi.volumeAttributes.fsName? == moodle_group_2  | describe
+open pvs.json | get items | where spec.csi.volumeAttributes.fsName? == moodle_group_2  | get spec.capacity
+open pvs.json | get items | where spec.csi.volumeAttributes.fsName? == moodle_group_2  | get spec.capacity.storage  |into filesize 
+open pvs.json | get items | where spec.csi.volumeAttributes.fsName? == moodle_group_2  | get spec.capacity.storage  |into filesize  | math sum
+open pvs.json | get items | where spec.csi.volumeAttributes.fsName? == moodle_group_2  | get spec.capacity.storage  |into filesize  | sort 
+celar
+clear
+helix $env.config
+helix .$nu.config-path
+celar
+clear
+kubectl 
+kubectl get nodes
+cd $nu.data-dir
+ls
+cd $nu.config-path
+helix $nu.config-path
+~/.config/nushell/
+ls
+clear
+ls
+clear
+kubectl data
+kubectl 
+kubectl  clear
+clear
+kubectl get nodes 
+kubectl get 
+clear
+ls
+$env.CARAPACE_BRIDGES = 'zsh,fish,bash,inshellisense' # optional<\n>mkdir $"($nu.cache-dir)"<\n>carapace _carapace nushell | save --force $"($nu.cache-dir)/carapace.nu"
+clear
+paru terraform 
+paru vault
+paru nodejs
+paru -S bun deno
+paru vault
+clear
+kubectl config.nu
+kubectl 
+kubectl config 
+tf
+clear
+$env.config
+celar
+clear
+gt 
+$env.config
+clear
+git tree 
+celar
+clear
+kubectl 
+kubectl get pods -n haproxy
+clear
+celar
+clear
+kubectl get --output json addons
+opencode
+clear
+yadm status

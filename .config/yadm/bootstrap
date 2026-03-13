@@ -19,5 +19,5 @@ makepkg -si
 # paru -S --needed - <~/.config/yadm/drivers.txt
 
 # Setup systemd services
-systemctl enable --user hypaper
+# systemctl enable --user hypaper
 sudo systemctl enable sshd
